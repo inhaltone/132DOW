@@ -59,3 +59,4 @@ while True:
 df = pd.DataFrame(articlesList)
 print(df.head())
 df.to_csv('guardian-war-ukraine.csv')
+df.to_json('guardian-war-ukraine.json')
