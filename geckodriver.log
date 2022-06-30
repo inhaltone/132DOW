@@ -1,0 +1,52 @@
+1656619990133	geckodriver	INFO	Listening on 127.0.0.1:53943
+1656619990290	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "53944" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/rb/l__d0n_n1t77t6tkdsbrgs4m0000gn/T/rust_mozprofileHuvJLY"
+[GFX1-]: [OPENGL] Failed to init compositor with reason: FEATURE_FAILURE_OPENGL_CREATE_CONTEXT
+console.warn: services.settings: Signature verified failed for main/fxmonitor-breaches. Retry from scratch
+1656619995217	Marionette	INFO	Listening on port 53963
+1656619995269	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.warn: services.settings: Signature verified failed for blocklists/gfx. Retry from scratch
+console.error: services.settings: 
+  Message: InvalidSignatureError: Invalid content signature (blocklists/gfx)
+  Stack:
+    InvalidSignatureError@resource://services-settings/RemoteSettingsClient.jsm:131:5
+_validateCollectionSignature@resource://services-settings/RemoteSettingsClient.jsm:763:13
+
+console.warn: services.settings: Signature verified failed for main/fxmonitor-breaches. Retry from scratch
+console.error: services.settings: 
+  Message: InvalidSignatureError: Invalid content signature (main/fxmonitor-breaches)
+  Stack:
+    InvalidSignatureError@resource://services-settings/RemoteSettingsClient.jsm:131:5
+_validateCollectionSignature@resource://services-settings/RemoteSettingsClient.jsm:763:13
+
+console.warn: services.settings: Signature verified failed for main/hijack-blocklists. Retry from scratch
+console.warn: services.settings: Signature verified failed for main/public-suffix-list. Retry from scratch
+console.error: services.settings: 
+  Message: InvalidSignatureError: Invalid content signature (main/public-suffix-list)
+  Stack:
+    InvalidSignatureError@resource://services-settings/RemoteSettingsClient.jsm:131:5
+_validateCollectionSignature@resource://services-settings/RemoteSettingsClient.jsm:763:13
+
+JavaScript warning: https://pagead2.googlesyndication.com/bg/yleD_imbJ2YLIerZJCJUa4yQOSRhPvCXXlQ8m3xKa_Q.js line 2 > eval line 925 > eval line 1 > eval line 1 > eval, line 1: Failed to create WebGL context: WebGL creation failed: 
+* tryNativeGL
+* Exhausted GL driver options.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/yleD_imbJ2YLIerZJCJUa4yQOSRhPvCXXlQ8m3xKa_Q.js line 2 > eval line 7414 > eval line 1 > eval line 1 > eval, line 1: Failed to create WebGL context: WebGL creation failed: 
+* tryNativeGL
+* Exhausted GL driver options.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/yleD_imbJ2YLIerZJCJUa4yQOSRhPvCXXlQ8m3xKa_Q.js line 2 > eval line 7140 > eval line 1 > eval line 1 > eval, line 1: Failed to create WebGL context: WebGL creation failed: 
+* tryNativeGL
+* Exhausted GL driver options.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/yleD_imbJ2YLIerZJCJUa4yQOSRhPvCXXlQ8m3xKa_Q.js line 2 > eval line 2276 > eval line 1 > eval line 1 > eval, line 1: Failed to create WebGL context: WebGL creation failed: 
+* tryNativeGL
+* Exhausted GL driver options.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/yleD_imbJ2YLIerZJCJUa4yQOSRhPvCXXlQ8m3xKa_Q.js line 2 > eval line 4775 > eval line 1 > eval line 1 > eval, line 1: Failed to create WebGL context: WebGL creation failed: 
+* tryNativeGL
+* Exhausted GL driver options.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.

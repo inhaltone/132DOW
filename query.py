@@ -40,7 +40,7 @@ def convert(soup):
 
 articlesarray = []
 
-for page in range(0, 80, 1):
+for page in range(0, 250, 1):
     soup = getdata(term, page)
     print(page)
     convert(soup)
