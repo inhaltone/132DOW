@@ -1,25 +1,19 @@
+from typing import Union, Any
 from bs4 import BeautifulSoup
-from selenium import webdriver
-from selenium.webdriver.common.by import By
-import json
-# from requests_html import HTMLSession
 import requests
 import re
-# data-discussion-url
-
-def sample():
-    browser = webdriver.Firefox()
-    browser.get('https://www.theguardian.com/politics/2022/feb/23/putins-looming-threat-gives-johnson-some-breathing-space#comments')
-    # vegetable = driver.find_element(By.CLASS_NAME, "tomatoes")
+from endpoints import Endpoints
 
 
-# sample()
 def getCommentCount(key):
-    api_url = 'https://discussion.theguardian.com/discussion-api/discussion'
-    s = requests.Session()
-    response = s.get(f'{api_url}{key}')
-    data = response.json()
-    print(data['discussion']['commentCount'])
+    try:
+        s = requests.Session()
+        response = s.get(f'{Endpoints.THE_GUARDIAN_DISCUSSION_API.value}{key}')
+        data = response.json()
+        return data['discussion']['commentCount']
+    except:
+        return None
+
 
 def getDiscussionKey(url):
     s = requests.Session()
@@ -30,18 +24,8 @@ def getDiscussionKey(url):
         script_with_key = script.getText().strip().__contains__('window.guardian = {"config":{')
         if script_with_key:
             text = script.getText().strip()
-            try:
-                discussion_key = re.search('"shortUrlId":"(.*?)"', text).group(1)
-                print(discussion_key)
-                return discussion_key
-            except:
-                return None
-
-
-
-key = getDiscussionKey('https://www.theguardian.com/politics/2022/feb/23/putins-looming-threat-gives-johnson-some-breathing-space#comments')
-if key:
-    getCommentCount(key)
+            discussion_key: Union[str, Any] = re.search('"shortUrlId":"(.*?)"', text).group(1)
+            return discussion_key
 
 
 def getRawHTML(url) -> object:
@@ -75,6 +59,3 @@ def getNextUrl(soup):
         return url
     else:
         return
-
-
-

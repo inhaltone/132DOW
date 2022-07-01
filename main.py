@@ -1,7 +1,7 @@
 import pandas as pd
 from bs4 import BeautifulSoup
 from requests_html import HTMLSession
-from app import getRawHTML, getNextUrl, getArticleText, getCommentCount
+from app import getRawHTML, getNextUrl, getArticleText, getDiscussionKey, getCommentCount
 from datetime import datetime
 
 FULL_URL = 'https://www.theguardian.com/world/ukraine/2022/feb/23/all'
@@ -37,10 +37,20 @@ def transformHTMLtoObject(soup: object) -> object:
             image = NOT_FOUND
         try:
             comment_url = article.find_parent('div', attrs={'data-discussion-closed': 'true'})['data-discussion-url']
-            comment_count = getCommentCount(comment_url)
+            # comment_count = getCommentCount(comment_url)
         except:
             comment_url = NOT_FOUND
+
+        if comment_url:
+            comment_key = getDiscussionKey(comment_url)
+            comment_count = getCommentCount(comment_key)
+            print(comment_count)
+            # print(comment_count)
+        else:
+            comment_key = NOT_FOUND
+            comment_count = NOT_FOUND
         data = {
+            'comment_key': comment_key,
             'comment count': comment_count,
             'comments': comment_url,
             'dateFull': dateFull,
@@ -50,7 +60,7 @@ def transformHTMLtoObject(soup: object) -> object:
             'image': image,
             'text': text
         }
-        print(data)
+        # print(data)
         articles_dict.append(data)
     return articles_dict
 
@@ -64,8 +74,8 @@ while True:
     count += 1
     print(f'========================================= {count} =======================================')
     # print(len(articles_data))
-    if count > 2:
+    if count > 10:
         break
 
-df.to_csv('data/test6-21.csv')
+df.to_csv('data/test6-23.csv')
 print(df.head())
