@@ -2,6 +2,7 @@ from typing import Union, Any
 from bs4 import BeautifulSoup
 from endpoints import Endpoints
 from datetime import datetime
+from utilities import Utilities
 import requests
 import re
 
@@ -182,3 +183,85 @@ class GuardianScraper:
             }
             articles_dict.append(data)
         return articles_dict
+
+
+class GuardianCommentsAPI:
+
+    @staticmethod
+    def getCommentsByCommentKey(key: str, page: int) -> object:
+        """
+
+        :type page: int
+        :param page:
+        :type key: str
+        :param key:
+        """
+        url = f'{Endpoints.THE_GUARDIAN_DISCUSSION_API.value}{key}?page={page}&pageSize=100'
+        print(url)
+        try:
+            s = requests.Session()
+            response = s.get(url)
+            comments = response.json()
+            data = comments
+        except:
+            data = NOT_FOUND
+        finally:
+            return data
+        # :path: / discussion - api / discussion / p / kz8t5?api - key = dotcom - rendering & orderBy = oldest & pageSize = 100 & displayThreaded = true & maxResponses = 3 & page = 1
+
+    @staticmethod
+    def apiResponseToDictionary(response: object) -> list:
+        comments = []
+        for comment in response['discussion']['comments']:
+            if not (comment.get('responses') is None):
+                replies = comment.get('responses')
+                responses = True
+                responses_count = len(replies)
+                for reply in replies:
+                    reply_dict = dict(
+                        responseId=reply['id'],
+                        responseText=Utilities.fromHTMLtoText(reply['body']),
+                        date=reply['date'],
+                        isoDateTime=reply['isoDateTime'],
+                        numRecommends=reply['numRecommends'],
+                        responseTo=reply['responseTo']['displayName'],
+                        commentId=reply['responseTo']['commentId'],
+                        commentWebUrl=reply['responseTo']['commentWebUrl']
+
+                    )
+            else:
+                responses = False
+                responses_count = 0
+                reply_dict = NOT_FOUND
+
+            data = dict(Title=response['discussion']['title'],
+                        key=response['discussion']['key'],
+                        commentCount=response['discussion']['commentCount'],
+                        webUrl=response['discussion']['webUrl'],
+                        apiUrl=response['discussion']['apiUrl'],
+                        discussionId=comment['id'],
+                        date=comment['date'],
+                        isoDateTime=comment['isoDateTime'],
+                        text=Utilities.fromHTMLtoText(comment['body']),
+                        userId=comment['userProfile']['userId'],
+                        displayName=comment['userProfile']['displayName'],
+                        numRecommends=comment['numRecommends'],
+                        isThreaded=response['discussion']['isThreaded'],
+                        responses=responses,
+                        responsesCount=responses_count,
+                        replies=reply_dict)
+            comments.append(data)
+        return comments
+
+
+class ImageDownloader:
+
+    @staticmethod
+    def getImage(url, filename):
+        response = requests.get(url, stream=True)
+        if response.status_code == 200:
+            with open('../data/images/' + filename + '.jpg', 'wb') as jpg:
+                jpg.write(response.content)
+            print('Image sucessfully Downloaded: ', filename)
+        else:
+            print('Image Couldn\'t be retrieved')

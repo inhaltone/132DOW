@@ -66,7 +66,7 @@ class TwitterApi:
         """
 
         :param query:
-        :type oldest_id: object
+        :type oldest_id: int
         """
         try:
             tweets_query = TwitterApi.api.search_tweets(q=query,
