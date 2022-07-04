@@ -16,3 +16,4 @@ class Hashtags(Enum):
     STAND_WITH_UKRAINE = '#StandWithUkraine'
     STOP_RUSSIA = '#StopRussia'
     UKRAINE_RUSSIA_WAR = '#UkraineRussiaWar'
+    PUTIN_WAR_CRIMINAL = '#PutinWarCriminal'
