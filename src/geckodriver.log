@@ -1,0 +1,354 @@
+1657001590060	geckodriver	INFO	Listening on 127.0.0.1:65008
+1657001590121	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "65009" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/rb/l__d0n_n1t77t6tkdsbrgs4m0000gn/T/rust_mozprofileP9Wcb9"
+[GFX1-]: [OPENGL] Failed to init compositor with reason: FEATURE_FAILURE_OPENGL_CREATE_CONTEXT
+1657001598443	Marionette	INFO	Listening on port 65027
+1657001598521	Marionette	WARN	TLS certificate errors will be ignored for this session
+1657001928351	geckodriver	INFO	Listening on 127.0.0.1:50193
+1657001928870	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "50194" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/rb/l__d0n_n1t77t6tkdsbrgs4m0000gn/T/rust_mozprofileUMR4D3"
+[GFX1-]: [OPENGL] Failed to init compositor with reason: FEATURE_FAILURE_OPENGL_CREATE_CONTEXT
+1657001934831	Marionette	INFO	Listening on port 50205
+1657001934873	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://secure-ds.serving-sys.com/BurstingCachedScripts//Ad_2_221_3_0/ebStdBanner.js, line 129: Failed to create WebGL context: WebGL creation failed: 
+* tryNativeGL
+* Exhausted GL driver options.
+[Child 43563, MediaDecoderStateMachine #1] WARNING: Decoder=14102d400 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - mozilla::MediaResult mozilla::AppleVTDecoder::InitializeSession(): Couldn't create decompression session!: file /builds/worker/checkouts/gecko/dom/media/MediaDecoderStateMachine.cpp, line 3370
+[Child 43563, MediaDecoderStateMachine #1] WARNING: Decoder=14102e400 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - mozilla::MediaResult mozilla::AppleVTDecoder::InitializeSession(): Couldn't create decompression session!: file /builds/worker/checkouts/gecko/dom/media/MediaDecoderStateMachine.cpp, line 3370
+[Child 43563, MediaDecoderStateMachine #1] WARNING: Decoder=14102c400 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - mozilla::MediaResult mozilla::AppleVTDecoder::InitializeSession(): Couldn't create decompression session!: file /builds/worker/checkouts/gecko/dom/media/MediaDecoderStateMachine.cpp, line 3370
+[Child 43563, MediaDecoderStateMachine #1] WARNING: Decoder=14102fc00 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - mozilla::MediaResult mozilla::AppleVTDecoder::InitializeSession(): Couldn't create decompression session!: file /builds/worker/checkouts/gecko/dom/media/MediaDecoderStateMachine.cpp, line 3370
+JavaScript warning: https://secure-ds.serving-sys.com/BurstingCachedScripts//Ad_2_221_3_0/ebHtml5PoliteBanner.js, line 140: Failed to create WebGL context: WebGL creation failed: 
+* tryNativeGL
+* Exhausted GL driver options.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/jM248wiKq0YW9gJU5iyZLO601i5VwbJBYGHxrXeF70U.js line 2 > eval line 7387 > eval line 1 > eval line 1 > eval, line 1: Failed to create WebGL context: WebGL creation failed: 
+* tryNativeGL
+* Exhausted GL driver options.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+1657002103753	geckodriver	INFO	Listening on 127.0.0.1:51204
+1657002103825	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "51205" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/rb/l__d0n_n1t77t6tkdsbrgs4m0000gn/T/rust_mozprofilejHt6ym"
+[GFX1-]: [OPENGL] Failed to init compositor with reason: FEATURE_FAILURE_OPENGL_CREATE_CONTEXT
+1657002115728	Marionette	INFO	Listening on port 51210
+1657002115857	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://secure-ds.serving-sys.com/BurstingCachedScripts//Ad_2_221_3_0/ebStdBanner.js, line 129: Failed to create WebGL context: WebGL creation failed: 
+* tryNativeGL
+* Exhausted GL driver options.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/jM248wiKq0YW9gJU5iyZLO601i5VwbJBYGHxrXeF70U.js line 2 > eval line 1176 > eval line 1 > eval line 1 > eval, line 1: Failed to create WebGL context: WebGL creation failed: 
+* tryNativeGL
+* Exhausted GL driver options.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+1657002525685	geckodriver	INFO	Listening on 127.0.0.1:53197
+1657002526206	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "53198" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/rb/l__d0n_n1t77t6tkdsbrgs4m0000gn/T/rust_mozprofilewQNOIG"
+[GFX1-]: [OPENGL] Failed to init compositor with reason: FEATURE_FAILURE_OPENGL_CREATE_CONTEXT
+1657002531780	Marionette	INFO	Listening on port 53205
+1657002531808	Marionette	WARN	TLS certificate errors will be ignored for this session
+1657002554571	geckodriver	INFO	Listening on 127.0.0.1:53398
+1657002554605	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "53399" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/rb/l__d0n_n1t77t6tkdsbrgs4m0000gn/T/rust_mozprofilesIQxNc"
+[GFX1-]: [OPENGL] Failed to init compositor with reason: FEATURE_FAILURE_OPENGL_CREATE_CONTEXT
+1657002562455	Marionette	INFO	Listening on port 53404
+1657002562519	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://pagead2.googlesyndication.com/bg/jM248wiKq0YW9gJU5iyZLO601i5VwbJBYGHxrXeF70U.js line 2 > eval line 3856 > eval line 1 > eval line 1 > eval, line 1: Failed to create WebGL context: WebGL creation failed: 
+* tryNativeGL
+* Exhausted GL driver options.
+JavaScript warning: https://secure-ds.serving-sys.com/BurstingCachedScripts//Ad_2_221_3_0/ebStdBanner.js, line 129: Failed to create WebGL context: WebGL creation failed: 
+* tryNativeGL
+* Exhausted GL driver options.
+1657002601426	Marionette	INFO	Stopped listening on port 65027
+1657002604532	Marionette	INFO	Stopped listening on port 51210
+1657002606455	Marionette	INFO	Stopped listening on port 50205
+1657002608690	Marionette	INFO	Stopped listening on port 53205
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+1657002611965	Marionette	INFO	Stopped listening on port 53404
+1657034865757	geckodriver	INFO	Listening on 127.0.0.1:60081
+1657034866305	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "60082" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/rb/l__d0n_n1t77t6tkdsbrgs4m0000gn/T/rust_mozprofilek82Xnj"
+[GFX1-]: [OPENGL] Failed to init compositor with reason: FEATURE_FAILURE_OPENGL_CREATE_CONTEXT
+1657034870844	Marionette	INFO	Listening on port 60089
+1657034870936	Marionette	WARN	TLS certificate errors will be ignored for this session
+1657035104681	geckodriver	INFO	Listening on 127.0.0.1:60181
+1657035104694	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "60182" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/rb/l__d0n_n1t77t6tkdsbrgs4m0000gn/T/rust_mozprofileMdXI6r"
+[GFX1-]: [OPENGL] Failed to init compositor with reason: FEATURE_FAILURE_OPENGL_CREATE_CONTEXT
+1657035109072	Marionette	INFO	Listening on port 60187
+1657035109163	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://pagead2.googlesyndication.com/bg/aHhPXGVii6m1UdQEw4dl9bTaUK-_iBumPQ-RERU6U4M.js line 2 > eval line 6784 > eval line 1 > eval line 1 > eval, line 1: Failed to create WebGL context: WebGL creation failed: 
+* tryNativeGL
+* Exhausted GL driver options.
+JavaScript error: , line 0: AbortError: The fetching process for the media resource was aborted by the user agent at the user's request.
+[Child 62868, MediaDecoderStateMachine #1] WARNING: Decoder=16fd19800 Decode error: NS_ERROR_FAILURE (0x80004005) - mozilla::MediaResult mozilla::AppleATDecoder::GetInputAudioDescription(AudioStreamBasicDescription &, const nsTArray<uint8_t> &): Unable to get format info:1718449215: file /builds/worker/checkouts/gecko/dom/media/MediaDecoderStateMachine.cpp, line 3370
+JavaScript warning: https://pagead2.googlesyndication.com/bg/edue1xTc5YuiZOhJi4VIA_c20CetZt5T9y7Q3cNnrTA.js line 2 > eval line 3623 > eval line 1 > eval line 1 > eval, line 1: Failed to create WebGL context: WebGL creation failed: 
+* tryNativeGL
+* Exhausted GL driver options.
+JavaScript error: https://s0.2mdn.net/ads/studio/cached_libs/createjs_2019.11.15_min.js, line 19: TypeError: f.funct is undefined
+JavaScript error: https://s0.2mdn.net/ads/studio/cached_libs/createjs_2019.11.15_min.js, line 19: TypeError: f.funct is undefined
+JavaScript error: https://s0.2mdn.net/ads/studio/cached_libs/createjs_2019.11.15_min.js, line 19: TypeError: f.funct is undefined
+JavaScript error: https://s0.2mdn.net/ads/studio/cached_libs/createjs_2019.11.15_min.js, line 19: TypeError: f.funct is undefined
+JavaScript error: https://s0.2mdn.net/ads/studio/cached_libs/createjs_2019.11.15_min.js, line 19: TypeError: undefined has no properties
+JavaScript error: https://s0.2mdn.net/ads/studio/cached_libs/createjs_2019.11.15_min.js, line 19: TypeError: undefined has no properties
+JavaScript error: https://s0.2mdn.net/ads/studio/cached_libs/createjs_2019.11.15_min.js, line 19: TypeError: undefined has no properties
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+1657035250264	geckodriver	INFO	Listening on 127.0.0.1:60349
+1657035250283	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "60350" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/rb/l__d0n_n1t77t6tkdsbrgs4m0000gn/T/rust_mozprofilehIieve"
+[GFX1-]: [OPENGL] Failed to init compositor with reason: FEATURE_FAILURE_OPENGL_CREATE_CONTEXT
+1657035255792	Marionette	INFO	Listening on port 60355
+1657035255872	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://pagead2.googlesyndication.com/bg/aHhPXGVii6m1UdQEw4dl9bTaUK-_iBumPQ-RERU6U4M.js line 2 > eval line 984 > eval line 1 > eval line 1 > eval, line 1: Failed to create WebGL context: WebGL creation failed: 
+* tryNativeGL
+* Exhausted GL driver options.
+1657035306199	Marionette	INFO	Stopped listening on port 60089
+1657035308014	Marionette	INFO	Stopped listening on port 60187
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+1657035310017	Marionette	INFO	Stopped listening on port 60355
+1657035345085	geckodriver	INFO	Listening on 127.0.0.1:60504
+1657035345606	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "60505" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/rb/l__d0n_n1t77t6tkdsbrgs4m0000gn/T/rust_mozprofileeNgXf7"
+[GFX1-]: [OPENGL] Failed to init compositor with reason: FEATURE_FAILURE_OPENGL_CREATE_CONTEXT
+1657035352083	Marionette	INFO	Listening on port 60512
+1657035352331	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://pagead2.googlesyndication.com/bg/aHhPXGVii6m1UdQEw4dl9bTaUK-_iBumPQ-RERU6U4M.js line 2 > eval line 2332 > eval line 1 > eval line 1 > eval, line 1: Failed to create WebGL context: WebGL creation failed: 
+* tryNativeGL
+* Exhausted GL driver options.
+JavaScript warning: https://secure-ds.serving-sys.com/BurstingCachedScripts//Ad_2_221_3_0/ebStdBannerEx.js, line 140: Failed to create WebGL context: WebGL creation failed: 
+* tryNativeGL
+* Exhausted GL driver options.
+1657036015651	geckodriver	INFO	Listening on 127.0.0.1:60827
+1657036016421	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "60828" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/rb/l__d0n_n1t77t6tkdsbrgs4m0000gn/T/rust_mozprofileaeFppF"
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+[GFX1-]: [OPENGL] Failed to init compositor with reason: FEATURE_FAILURE_OPENGL_CREATE_CONTEXT
+1657036030255	Marionette	INFO	Listening on port 60835
+1657036030479	Marionette	WARN	TLS certificate errors will be ignored for this session
+1657036076021	Marionette	INFO	Stopped listening on port 60512
+[Parent 69124, Gecko_IOThread] WARNING: pipe error: Socket is not connected: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 727
+1657036079309	Marionette	INFO	Stopped listening on port 60835
+1657036084326	geckodriver	INFO	Listening on 127.0.0.1:61043
+1657036084397	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "61044" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/rb/l__d0n_n1t77t6tkdsbrgs4m0000gn/T/rust_mozprofileU9dZ8L"
+[GFX1-]: [OPENGL] Failed to init compositor with reason: FEATURE_FAILURE_OPENGL_CREATE_CONTEXT
+1657036096935	Marionette	INFO	Listening on port 61049
+1657036097053	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://secure-ds.serving-sys.com/resources/PROD/html5/125408/20220701/1076620644/71982125323195962/index.html?v=_2_150_1_0&n=1&sHost=secure-ds.serving-sys.com, line 178: ReferenceError: $ is not defined
+JavaScript warning: https://secure-ds.serving-sys.com/BurstingCachedScripts//Ad_2_221_3_0/ebHtml5Banner.js, line 140: Failed to create WebGL context: WebGL creation failed: 
+* tryNativeGL
+* Exhausted GL driver options.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/aHhPXGVii6m1UdQEw4dl9bTaUK-_iBumPQ-RERU6U4M.js line 2 > eval line 3151 > eval line 1 > eval line 1 > eval, line 1: Failed to create WebGL context: WebGL creation failed: 
+* tryNativeGL
+* Exhausted GL driver options.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+Exiting due to channel error.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+1657036208361	geckodriver	INFO	Listening on 127.0.0.1:61266
+1657036208409	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "61267" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/rb/l__d0n_n1t77t6tkdsbrgs4m0000gn/T/rust_mozprofileWgvvVx"
+[GFX1-]: [OPENGL] Failed to init compositor with reason: FEATURE_FAILURE_OPENGL_CREATE_CONTEXT
+1657036227707	Marionette	INFO	Listening on port 61272
+1657036227832	Marionette	WARN	TLS certificate errors will be ignored for this session
+1657036260131	Marionette	INFO	Stopped listening on port 61272
+1657036267353	geckodriver	INFO	Listening on 127.0.0.1:61511
+1657036267403	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "61512" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/rb/l__d0n_n1t77t6tkdsbrgs4m0000gn/T/rust_mozprofileBo4FAN"
+[GFX1-]: [OPENGL] Failed to init compositor with reason: FEATURE_FAILURE_OPENGL_CREATE_CONTEXT
+1657036285066	Marionette	INFO	Listening on port 61517
+1657036285310	Marionette	WARN	TLS certificate errors will be ignored for this session
+1657036321311	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:245:13
+TimedPromise@chrome://marionette/content/sync.js:230:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:416:10
+webdriverClickElement@chrome://marionette/content/interaction.js:182:31
+JavaScript warning: https://secure-ds.serving-sys.com/BurstingCachedScripts//Ad_2_221_3_0/ebStdBanner.js, line 129: Failed to create WebGL context: WebGL creation failed: 
+* tryNativeGL
+* Exhausted GL driver options.
+JavaScript warning: https://secure-ds.serving-sys.com/BurstingCachedScripts//Ad_2_221_3_0/ebStdBanner.js, line 129: Failed to create WebGL context: WebGL creation failed: 
+* tryNativeGL
+* Exhausted GL driver options.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/aHhPXGVii6m1UdQEw4dl9bTaUK-_iBumPQ-RERU6U4M.js line 2 > eval line 3764 > eval line 1 > eval line 1 > eval, line 1: Failed to create WebGL context: WebGL creation failed: 
+* tryNativeGL
+* Exhausted GL driver options.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+1657036511750	geckodriver	INFO	Listening on 127.0.0.1:61835
+1657036511811	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "61836" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/rb/l__d0n_n1t77t6tkdsbrgs4m0000gn/T/rust_mozprofileV3rft7"
+[GFX1-]: [OPENGL] Failed to init compositor with reason: FEATURE_FAILURE_OPENGL_CREATE_CONTEXT
+1657036530797	Marionette	INFO	Listening on port 61841
+1657036530859	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://pagead2.googlesyndication.com/bg/aHhPXGVii6m1UdQEw4dl9bTaUK-_iBumPQ-RERU6U4M.js line 2 > eval line 1201 > eval line 1 > eval line 1 > eval, line 1: Failed to create WebGL context: WebGL creation failed: 
+* tryNativeGL
+* Exhausted GL driver options.
+console.error: "Store does not have a valid reducer. Make sure the argument passed to combineReducers is an object whose values are reducers."
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+1657037542233	Marionette	INFO	Stopped listening on port 61841
+1657037548285	geckodriver	INFO	Listening on 127.0.0.1:63550
+1657037548819	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "63551" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/rb/l__d0n_n1t77t6tkdsbrgs4m0000gn/T/rust_mozprofileHwO3ww"
+[GFX1-]: [OPENGL] Failed to init compositor with reason: FEATURE_FAILURE_OPENGL_CREATE_CONTEXT
+1657037556011	Marionette	INFO	Listening on port 63558
+1657037556056	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://pagead2.googlesyndication.com/bg/aHhPXGVii6m1UdQEw4dl9bTaUK-_iBumPQ-RERU6U4M.js line 2 > eval line 5264 > eval line 1 > eval line 1 > eval, line 1: Failed to create WebGL context: WebGL creation failed: 
+* tryNativeGL
+* Exhausted GL driver options.
+JavaScript warning: https://secure-ds.serving-sys.com/BurstingCachedScripts//Ad_2_221_3_0/ebStdBanner.js, line 129: Failed to create WebGL context: WebGL creation failed: 
+* tryNativeGL
+* Exhausted GL driver options.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+1657037588599	geckodriver	INFO	Listening on 127.0.0.1:63748
+1657037588631	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "63749" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/rb/l__d0n_n1t77t6tkdsbrgs4m0000gn/T/rust_mozprofileYZBSVF"
+1657037590179	Marionette	INFO	Stopped listening on port 63558
+[GFX1-]: [OPENGL] Failed to init compositor with reason: FEATURE_FAILURE_OPENGL_CREATE_CONTEXT
+1657037598054	Marionette	INFO	Listening on port 63754
+1657037598150	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://pagead2.googlesyndication.com/bg/aHhPXGVii6m1UdQEw4dl9bTaUK-_iBumPQ-RERU6U4M.js line 2 > eval line 6459 > eval line 1 > eval line 1 > eval, line 1: Failed to create WebGL context: WebGL creation failed: 
+* tryNativeGL
+* Exhausted GL driver options.
+1657037693402	geckodriver	INFO	Listening on 127.0.0.1:63958
+1657037693421	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "63959" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/rb/l__d0n_n1t77t6tkdsbrgs4m0000gn/T/rust_mozprofiles0idQK"
+[GFX1-]: [OPENGL] Failed to init compositor with reason: FEATURE_FAILURE_OPENGL_CREATE_CONTEXT
+1657037700548	Marionette	INFO	Listening on port 63964
+1657037700581	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://pagead2.googlesyndication.com/bg/aHhPXGVii6m1UdQEw4dl9bTaUK-_iBumPQ-RERU6U4M.js line 2 > eval line 4249 > eval line 1 > eval line 1 > eval, line 1: Failed to create WebGL context: WebGL creation failed: 
+* tryNativeGL
+* Exhausted GL driver options.
+JavaScript warning: https://secure-ds.serving-sys.com/BurstingCachedScripts//Ad_2_221_3_0/ebStdBanner.js, line 129: Failed to create WebGL context: WebGL creation failed: 
+* tryNativeGL
+* Exhausted GL driver options.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+1657037911846	geckodriver	INFO	Listening on 127.0.0.1:64161
+1657037912364	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "64162" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/rb/l__d0n_n1t77t6tkdsbrgs4m0000gn/T/rust_mozprofiledfDGEI"
+[GFX1-]: [OPENGL] Failed to init compositor with reason: FEATURE_FAILURE_OPENGL_CREATE_CONTEXT
+1657037918717	Marionette	INFO	Listening on port 64169
+1657037918820	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://pagead2.googlesyndication.com/bg/aHhPXGVii6m1UdQEw4dl9bTaUK-_iBumPQ-RERU6U4M.js line 2 > eval line 4335 > eval line 1 > eval line 1 > eval, line 1: Failed to create WebGL context: WebGL creation failed: 
+* tryNativeGL
+* Exhausted GL driver options.
+JavaScript warning: https://secure-ds.serving-sys.com/BurstingCachedScripts//Ad_2_221_3_0/ebStdBanner.js, line 129: Failed to create WebGL context: WebGL creation failed: 
+* tryNativeGL
+* Exhausted GL driver options.
+console.error: "Store does not have a valid reducer. Make sure the argument passed to combineReducers is an object whose values are reducers."
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+1657038328831	Marionette	INFO	Stopped listening on port 63964
+1657038330290	Marionette	INFO	Stopped listening on port 63754
+1657038331963	Marionette	INFO	Stopped listening on port 64169
+1657038345577	geckodriver	INFO	Listening on 127.0.0.1:64396
+1657038346087	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "64397" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/rb/l__d0n_n1t77t6tkdsbrgs4m0000gn/T/rust_mozprofileQPrz1d"
+[GFX1-]: [OPENGL] Failed to init compositor with reason: FEATURE_FAILURE_OPENGL_CREATE_CONTEXT
+1657038350846	Marionette	INFO	Listening on port 64404
+1657038351017	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://pagead2.googlesyndication.com/bg/aHhPXGVii6m1UdQEw4dl9bTaUK-_iBumPQ-RERU6U4M.js line 2 > eval line 231 > eval line 1 > eval line 1 > eval, line 1: Failed to create WebGL context: WebGL creation failed: 
+* tryNativeGL
+* Exhausted GL driver options.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/edue1xTc5YuiZOhJi4VIA_c20CetZt5T9y7Q3cNnrTA.js line 2 > eval line 7656 > eval line 1 > eval line 1 > eval, line 1: Failed to create WebGL context: WebGL creation failed: 
+* tryNativeGL
+* Exhausted GL driver options.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+1657038378758	Marionette	INFO	Stopped listening on port 64404
+1657038413783	geckodriver	INFO	Listening on 127.0.0.1:64591
+1657038413840	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "64592" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/rb/l__d0n_n1t77t6tkdsbrgs4m0000gn/T/rust_mozprofile9aW2v4"
+[GFX1-]: [OPENGL] Failed to init compositor with reason: FEATURE_FAILURE_OPENGL_CREATE_CONTEXT
+1657038422572	Marionette	INFO	Listening on port 64597
+1657038422909	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://pagead2.googlesyndication.com/bg/aHhPXGVii6m1UdQEw4dl9bTaUK-_iBumPQ-RERU6U4M.js line 2 > eval line 7226 > eval line 1 > eval line 1 > eval, line 1: Failed to create WebGL context: WebGL creation failed: 
+* tryNativeGL
+* Exhausted GL driver options.
+JavaScript warning: https://secure-ds.serving-sys.com/BurstingCachedScripts//Ad_2_221_3_0/ebStdBanner.js, line 129: Failed to create WebGL context: WebGL creation failed: 
+* tryNativeGL
+* Exhausted GL driver options.
+console.error: "Store does not have a valid reducer. Make sure the argument passed to combineReducers is an object whose values are reducers."
+1657038751128	geckodriver	INFO	Listening on 127.0.0.1:64861
+1657038751641	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "64862" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/rb/l__d0n_n1t77t6tkdsbrgs4m0000gn/T/rust_mozprofile6VVX0m"
+[GFX1-]: [OPENGL] Failed to init compositor with reason: FEATURE_FAILURE_OPENGL_CREATE_CONTEXT
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+1657038756452	Marionette	INFO	Listening on port 64869
+1657038756483	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://pagead2.googlesyndication.com/bg/aHhPXGVii6m1UdQEw4dl9bTaUK-_iBumPQ-RERU6U4M.js line 2 > eval line 514 > eval line 1 > eval line 1 > eval, line 1: Failed to create WebGL context: WebGL creation failed: 
+* tryNativeGL
+* Exhausted GL driver options.
+[Child 88148, MediaDecoderStateMachine #1] WARNING: Decoder=14c6e1000 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - mozilla::MediaResult mozilla::AppleVTDecoder::InitializeSession(): Couldn't create decompression session!: file /builds/worker/checkouts/gecko/dom/media/MediaDecoderStateMachine.cpp, line 3370
+[Child 88148, MediaDecoderStateMachine #1] WARNING: Decoder=16ecf0000 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - mozilla::MediaResult mozilla::AppleVTDecoder::InitializeSession(): Couldn't create decompression session!: file /builds/worker/checkouts/gecko/dom/media/MediaDecoderStateMachine.cpp, line 3370
+[Child 88148, MediaDecoderStateMachine #1] WARNING: Decoder=14c6dd800 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - mozilla::MediaResult mozilla::AppleVTDecoder::InitializeSession(): Couldn't create decompression session!: file /builds/worker/checkouts/gecko/dom/media/MediaDecoderStateMachine.cpp, line 3370
+[Child 88148, MediaDecoderStateMachine #1] WARNING: Decoder=14c6e3000 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - mozilla::MediaResult mozilla::AppleVTDecoder::InitializeSession(): Couldn't create decompression session!: file /builds/worker/checkouts/gecko/dom/media/MediaDecoderStateMachine.cpp, line 3370
+JavaScript warning: https://pagead2.googlesyndication.com/bg/edue1xTc5YuiZOhJi4VIA_c20CetZt5T9y7Q3cNnrTA.js line 2 > eval line 1509 > eval line 1 > eval line 1 > eval, line 1: Failed to create WebGL context: WebGL creation failed: 
+* tryNativeGL
+* Exhausted GL driver options.
+JavaScript warning: https://secure-ds.serving-sys.com/BurstingCachedScripts//Ad_2_221_3_0/ebHtml5PoliteBanner.js, line 140: Failed to create WebGL context: WebGL creation failed: 
+* tryNativeGL
+* Exhausted GL driver options.
+JavaScript error: https://s0.2mdn.net/ads/studio/cached_libs/createjs_2019.11.15_min.js, line 19: TypeError: f.funct is undefined
+JavaScript error: https://s0.2mdn.net/ads/studio/cached_libs/createjs_2019.11.15_min.js, line 19: TypeError: f.funct is undefined
+JavaScript error: https://s0.2mdn.net/ads/studio/cached_libs/createjs_2019.11.15_min.js, line 19: TypeError: f.funct is undefined
+JavaScript error: https://s0.2mdn.net/ads/studio/cached_libs/createjs_2019.11.15_min.js, line 19: TypeError: f.funct is undefined
+JavaScript error: https://s0.2mdn.net/ads/studio/cached_libs/createjs_2019.11.15_min.js, line 19: TypeError: undefined has no properties
+JavaScript error: https://s0.2mdn.net/ads/studio/cached_libs/createjs_2019.11.15_min.js, line 19: TypeError: undefined has no properties
+JavaScript error: https://s0.2mdn.net/ads/studio/cached_libs/createjs_2019.11.15_min.js, line 19: TypeError: undefined has no properties
+JavaScript error: https://s0.2mdn.net/ads/studio/cached_libs/createjs_2019.11.15_min.js, line 19: TypeError: undefined has no properties
+JavaScript error: https://s0.2mdn.net/ads/studio/cached_libs/createjs_2019.11.15_min.js, line 19: TypeError: undefined has no properties
+JavaScript error: https://s0.2mdn.net/ads/studio/cached_libs/createjs_2019.11.15_min.js, line 19: TypeError: undefined has no properties
+JavaScript error: https://s0.2mdn.net/ads/studio/cached_libs/createjs_2019.11.15_min.js, line 19: TypeError: undefined has no properties
+JavaScript error: https://s0.2mdn.net/ads/studio/cached_libs/createjs_2019.11.15_min.js, line 19: TypeError: undefined has no properties
+JavaScript error: https://s0.2mdn.net/ads/studio/cached_libs/createjs_2019.11.15_min.js, line 19: TypeError: undefined has no properties
+JavaScript error: https://s0.2mdn.net/ads/studio/cached_libs/createjs_2019.11.15_min.js, line 19: TypeError: undefined has no properties
+JavaScript error: https://s0.2mdn.net/ads/studio/cached_libs/createjs_2019.11.15_min.js, line 19: TypeError: undefined has no properties
+JavaScript error: https://s0.2mdn.net/ads/studio/cached_libs/createjs_2019.11.15_min.js, line 19: TypeError: undefined has no properties
+JavaScript error: https://s0.2mdn.net/ads/studio/cached_libs/createjs_2019.11.15_min.js, line 19: TypeError: undefined has no properties
+JavaScript error: https://s0.2mdn.net/ads/studio/cached_libs/createjs_2019.11.15_min.js, line 19: TypeError: undefined has no properties
+JavaScript error: https://s0.2mdn.net/ads/studio/cached_libs/createjs_2019.11.15_min.js, line 19: TypeError: undefined has no properties
+JavaScript error: https://s0.2mdn.net/ads/studio/cached_libs/createjs_2019.11.15_min.js, line 19: TypeError: undefined has no properties
+JavaScript error: https://s0.2mdn.net/ads/studio/cached_libs/createjs_2019.11.15_min.js, line 19: TypeError: undefined has no properties
+JavaScript error: https://s0.2mdn.net/ads/studio/cached_libs/createjs_2019.11.15_min.js, line 19: TypeError: undefined has no properties
+JavaScript error: https://s0.2mdn.net/ads/studio/cached_libs/createjs_2019.11.15_min.js, line 19: TypeError: f.funct is undefined
+JavaScript error: https://s0.2mdn.net/ads/studio/cached_libs/createjs_2019.11.15_min.js, line 19: TypeError: undefined has no properties
+JavaScript error: https://s0.2mdn.net/ads/studio/cached_libs/createjs_2019.11.15_min.js, line 19: TypeError: undefined has no properties
+JavaScript error: https://s0.2mdn.net/ads/studio/cached_libs/createjs_2019.11.15_min.js, line 19: TypeError: undefined has no properties
+JavaScript error: https://s0.2mdn.net/ads/studio/cached_libs/createjs_2019.11.15_min.js, line 19: TypeError: undefined has no properties
+JavaScript error: https://s0.2mdn.net/ads/studio/cached_libs/createjs_2019.11.15_min.js, line 19: TypeError: undefined has no properties
+JavaScript error: https://s0.2mdn.net/ads/studio/cached_libs/createjs_2019.11.15_min.js, line 19: TypeError: undefined has no properties
+JavaScript error: https://s0.2mdn.net/ads/studio/cached_libs/createjs_2019.11.15_min.js, line 19: TypeError: undefined has no properties
+JavaScript error: https://s0.2mdn.net/ads/studio/cached_libs/createjs_2019.11.15_min.js, line 19: TypeError: undefined has no properties
+JavaScript error: https://s0.2mdn.net/ads/studio/cached_libs/createjs_2019.11.15_min.js, line 19: TypeError: undefined has no properties
+JavaScript error: https://s0.2mdn.net/ads/studio/cached_libs/createjs_2019.11.15_min.js, line 19: TypeError: undefined has no properties
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+1657039322397	Marionette	INFO	Stopped listening on port 64869
+1657039326847	geckodriver	INFO	Listening on 127.0.0.1:65137
+1657039327364	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "65138" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/rb/l__d0n_n1t77t6tkdsbrgs4m0000gn/T/rust_mozprofilel96jKZ"
+[GFX1-]: [OPENGL] Failed to init compositor with reason: FEATURE_FAILURE_OPENGL_CREATE_CONTEXT
+1657039331512	Marionette	INFO	Listening on port 65145
+1657039331594	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Child 92064, MediaDecoderStateMachine #1] WARNING: Decoder=14e907800 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - mozilla::MediaResult mozilla::AppleVTDecoder::InitializeSession(): Couldn't create decompression session!: file /builds/worker/checkouts/gecko/dom/media/MediaDecoderStateMachine.cpp, line 3370
+[Child 92064, MediaDecoderStateMachine #1] WARNING: Decoder=14e904000 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - mozilla::MediaResult mozilla::AppleVTDecoder::InitializeSession(): Couldn't create decompression session!: file /builds/worker/checkouts/gecko/dom/media/MediaDecoderStateMachine.cpp, line 3370
+[Child 92064, MediaDecoderStateMachine #1] WARNING: Decoder=14e902c00 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - mozilla::MediaResult mozilla::AppleVTDecoder::InitializeSession(): Couldn't create decompression session!: file /builds/worker/checkouts/gecko/dom/media/MediaDecoderStateMachine.cpp, line 3370
+[Child 92064, MediaDecoderStateMachine #1] WARNING: Decoder=14e906400 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - mozilla::MediaResult mozilla::AppleVTDecoder::InitializeSession(): Couldn't create decompression session!: file /builds/worker/checkouts/gecko/dom/media/MediaDecoderStateMachine.cpp, line 3370
+JavaScript warning: https://secure-ds.serving-sys.com/BurstingCachedScripts//Ad_2_221_3_0/ebHtml5PoliteBanner.js, line 140: Failed to create WebGL context: WebGL creation failed: 
+* tryNativeGL
+* Exhausted GL driver options.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/aHhPXGVii6m1UdQEw4dl9bTaUK-_iBumPQ-RERU6U4M.js line 2 > eval line 2781 > eval line 1 > eval line 1 > eval, line 1: Failed to create WebGL context: WebGL creation failed: 
+* tryNativeGL
+* Exhausted GL driver options.
+1657039437608	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:245:13
+TimedPromise@chrome://marionette/content/sync.js:230:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:416:10
+webdriverClickElement@chrome://marionette/content/interaction.js:182:31
+1657039444914	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:245:13
+TimedPromise@chrome://marionette/content/sync.js:230:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:416:10
+webdriverClickElement@chrome://marionette/content/interaction.js:182:31

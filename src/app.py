@@ -254,6 +254,15 @@ class GuardianCommentsAPI:
         return comments
 
 
+class KathimeriniScraper:
+
+    @staticmethod
+    def triggerAjax():
+        s = requests.Session()
+        response = s.get(Endpoints.KATHIMERINI_TAGS_POLEMOS_STIN_OUKRANIA.value)
+        soup = BeautifulSoup(response.text, "html.parser")
+
+
 class ImageDownloader:
 
     @staticmethod
@@ -265,3 +274,5 @@ class ImageDownloader:
             print('Image sucessfully Downloaded: ', filename)
         else:
             print('Image Couldn\'t be retrieved')
+
+

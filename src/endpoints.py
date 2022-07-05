@@ -7,6 +7,7 @@ class Endpoints(Enum):
     THE_GUARDIAN_RUSSIA = 'https://www.theguardian.com/world/russia/2022/feb/23/all'
     THE_GUARDIAN_NATO = 'https://www.theguardian.com/world/nato/2022/feb/23/all'
     THE_GUARDIAN_PUTIN = 'https://www.theguardian.com/world/vladimir-putin/2022/feb/23/all'
+    KATHIMERINI_TAGS_POLEMOS_STIN_OUKRANIA = 'https://www.kathimerini.gr/tag/polemos-stin-oykrania/'
 
 
 class Hashtags(Enum):
