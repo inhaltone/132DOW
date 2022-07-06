@@ -9,6 +9,8 @@ class Endpoints(Enum):
     THE_GUARDIAN_PUTIN = 'https://www.theguardian.com/world/vladimir-putin/2022/feb/23/all'
     KATHIMERINI_TAGS_POLEMOS_STIN_OUKRANIA = 'https://www.kathimerini.gr/tag/polemos-stin-oykrania/'
     NAFTEMPORIKI_POLEMOS_STIN_OUKRANIA = 'https://www.naftemporiki.gr/stream/3137/polemos-stin-oukrania'
+    EFSYN_BASE_URL = 'https://www.efsyn.gr'
+    EFSYN_OUKRANIA = 'https://www.efsyn.gr/oykrania'
 
 
 class Hashtags(Enum):

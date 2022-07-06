@@ -254,13 +254,78 @@ class GuardianCommentsAPI:
         return comments
 
 
-class KathimeriniScraper:
+class efsynScraper:
 
     @staticmethod
-    def triggerAjax():
+    def getArticles(url: str) -> list:
+        articles_data = []
         s = requests.Session()
-        response = s.get(Endpoints.KATHIMERINI_TAGS_POLEMOS_STIN_OUKRANIA.value)
-        soup = BeautifulSoup(response.text, "html.parser")
+        response = s.get(url)
+        soup = BeautifulSoup(response.content, "html.parser")
+        try:
+            articles = soup.find_all('article', attrs={'class': 'default-teaser__article'})
+            for article in articles:
+                tag = article.find('a', attrs={'class': 'default-teaser__cat'}).text.strip()
+                datetime = article.find('time', attrs={'class': 'default-date'}).text.split(",")
+                date = datetime[0]
+                time = datetime[1].replace(" ", "")
+                heading = article.find('div', attrs={'class': 'default-teaser__title'}).text.strip()
+                article_url = article.find('a', attrs={'class': 'full-link'})['href']
+                full_url = f'{Endpoints.EFSYN_BASE_URL.value}{article_url}'
+                article_soup = efsynScraper.getArticleContent(full_url)
+                text = efsynScraper.getFullText(article_soup)
+                image_url = efsynScraper.getArticleImage(article_soup)
+                if not image_url:
+                    image_url = NOT_FOUND
+
+                data = dict(tag=tag,
+                            date=date,
+                            time=time,
+                            heading=heading,
+                            url=full_url,
+                            text=text,
+                            image_url=image_url
+                            )
+                articles_data.append(data)
+        except:
+            articles_data = []
+        finally:
+            return articles_data
+
+
+    @staticmethod
+    def getArticleContent(url: str) -> str:
+        s = requests.Session()
+        response = s.get(url)
+        soup = BeautifulSoup(response.content, "html.parser")
+        return soup
+
+
+
+    @staticmethod
+    def getFullText(soup: object):
+        try:
+            paragraphs = soup.find('div', attrs={'class': 'article__body'}).find_all('p')
+            text = ' '.join(str(child.text.strip()) for child in paragraphs)
+        except:
+            text = NOT_FOUND
+        finally:
+            return text
+
+    @staticmethod
+    def getArticleImage(soup: object) -> str:
+        try:
+            image = soup.find('figure', attrs={'class': 'article__media'})
+            image_url = image.find('img')['src']
+            image_url_full = f'{Endpoints.EFSYN_BASE_URL.value}{image_url}'
+            # caption = image.find('figcaption').find('p').text.strip()
+            data = image_url_full
+
+        except:
+            data = NOT_FOUND
+        finally:
+            return data
+
 
 
 class ImageDownloader:

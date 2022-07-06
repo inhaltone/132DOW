@@ -19,6 +19,6 @@ while True:
     if not url:
         break
 
-guardian_df.to_csv('data/guard-articles-russia.csv')
+guardian_df.to_csv('../data/raw/guardian/guard-articles-russia.csv')
 print('FINISHED!!!')
 print(guardian_df.shape)
