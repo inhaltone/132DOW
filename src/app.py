@@ -292,15 +292,12 @@ class efsynScraper:
         finally:
             return articles_data
 
-
     @staticmethod
     def getArticleContent(url: str) -> str:
         s = requests.Session()
         response = s.get(url)
         soup = BeautifulSoup(response.content, "html.parser")
         return soup
-
-
 
     @staticmethod
     def getFullText(soup: object):
@@ -327,6 +324,136 @@ class efsynScraper:
             return data
 
 
+class kathimeriniScraper:
+
+    @staticmethod
+    def getPageContent(url: str) -> object:
+        s = requests.Session()
+        response = s.get(url)
+        print(f'GET: url => {url}')
+        soup = BeautifulSoup(response.content, "html.parser")
+        return soup
+
+    @staticmethod
+    def getArticleText(soup: object) -> str:
+        try:
+            paragraphs = soup.find('div', attrs={'class': 'entry-content'}).find_all('p')
+            full_text = ' '.join(str(child.text.strip()) for child in paragraphs)
+            cleanText = Utilities.fromHTMLtoText(full_text)
+        except:
+            cleanText = NOT_FOUND
+        finally:
+            return cleanText
+
+    @staticmethod
+    def getDateTime(soup: object) -> dict:
+        try:
+            raw_date = soup.find('span', attrs={'class': 'meta-date'})
+            date = raw_date.find('time').text.replace("•", "")
+            dateUTC = raw_date.find('time')['datetime']
+            date = dict(
+                date=date,
+                dateUTC=dateUTC
+            )
+        except:
+            date = NOT_FOUND
+        finally:
+            return date
+
+    @staticmethod
+    def constructData(article: object) -> dict:
+        url = article.find('div', attrs={'class': 'article_thumbnail_wrapper'}).find('a')['href']
+        heading = article.find('h2').text.strip()
+        summary = article.find('p').text.strip()
+        tag = article.find('span', attrs={'class': 'headlines'}).text.strip()
+        soup = kathimeriniScraper.getPageContent(url)
+        full_text = kathimeriniScraper.getArticleText(soup)
+        try:
+            date = kathimeriniScraper.getDateTime(soup)
+            dateUTC = date.get("dateUTC")
+            date = date.get("date")
+        except:
+            dateUTC = NOT_FOUND
+            date = NOT_FOUND
+
+        data = dict(url=url,
+                    heading=heading,
+                    summary=summary,
+                    tag=tag,
+                    full_text=full_text,
+                    dateUTC=dateUTC,
+                    date=date)
+        return data
+
+
+class naftemporikiScraper:
+
+    @staticmethod
+    def constructData(article: object) -> dict:
+        try:
+            heading = article\
+                .find('div', attrs={'class': 'storyHeader'})\
+                .find('h3').find('a')\
+                .text.strip()
+            url = article\
+                .find('div', attrs={'class': 'storyHeader'})\
+                .find('h3')\
+                .find('a')['href']
+            full_url = f'{Endpoints.NAFTEMPORIKI_BASE_URL.value}{url}'
+            date = article\
+                .find('div', attrs={'class': 'storyHeader'})\
+                .find('span', attrs={'class': 'date'})\
+                .text.replace("-", "")
+            tag = article\
+                .find('div', attrs={'class': 'storyHeader'})\
+                .find('span', attrs={'class': 'stream-categ'})\
+                .find('a').text.strip()
+            soup = naftemporikiScraper.getPageContent(full_url)
+            text = naftemporikiScraper.getFullText(soup)
+            image = naftemporikiScraper.getImage(soup)
+            data = dict(url=full_url,
+                        heading=heading,
+                        date=date,
+                        tag=tag,
+                        text=text,
+                        image=image
+                        )
+        except:
+            data = NOT_FOUND
+        finally:
+            return data
+
+    @staticmethod
+    def getPageContent(url: str) -> object:
+        s = requests.Session()
+        response = s.get(url)
+        print(f'GET: url => {url}')
+        soup = BeautifulSoup(response.content, "html.parser")
+        return soup
+
+    @staticmethod
+    def getFullText(soup: object) -> str:
+        try:
+            paragraphs = soup.find('span', attrs={'id': 'spBody'}).find_all('p')
+            text = ' '.join(str(child.text.strip()) for child in paragraphs)
+            cleanText = Utilities.fromHTMLtoText(text)
+        except:
+            cleanText = NOT_FOUND
+        finally:
+            return cleanText
+
+    @staticmethod
+    def getImage(soup: object):
+        try:
+            image = soup\
+                .find('div', attrs={'class': 'storyMediaContent'})\
+                .find('img')['src']
+            image_url = f'{Endpoints.NAFTEMPORIKI_BASE_URL.value}{image}'
+        except:
+            image_url = NOT_FOUND
+        finally:
+            return image_url
+
 
 class ImageDownloader:
 
@@ -341,3 +468,14 @@ class ImageDownloader:
             print('Image Couldn\'t be retrieved')
 
 
+class ParserHTML:
+
+    @staticmethod
+    def readRawHTML(path: str) -> object:
+        """
+
+        :type path: str
+        """
+        with open(path) as file:
+            soup = BeautifulSoup(file, "html.parser")
+            return soup

@@ -1,6 +1,18 @@
-from bs4 import BeautifulSoup
+from app import ParserHTML, kathimeriniScraper
+import pandas as pd
 
-with open('../data/raw/kathimerini/polemos-stin-oukrania.txt') as file:
-    soup = BeautifulSoup(file, "html.parser")
-    sample = soup.find_all('article')
-    print(len(sample))
+kathimerini = ParserHTML.readRawHTML('../data/raw/kathimerini/polemos-stin-oukrania.txt')
+articles = kathimerini.find_all('article')
+kathimerini_df = pd.DataFrame()
+count = 0
+path = '../data/raw/kathimerini/'
+
+for article in articles:
+    data = kathimeriniScraper.constructData(article)
+    kathimerini_df = pd.concat([kathimerini_df, pd.DataFrame([data])], axis=0, ignore_index=True)
+    print(kathimerini_df.shape)
+
+kathimerini_df.to_csv(f'{path}kathimerini-polemos-stin-oukrania.csv')
+print('FINISHED!!!')
+
+
