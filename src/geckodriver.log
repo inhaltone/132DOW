@@ -352,3 +352,84 @@ TimedPromise/<@chrome://marionette/content/sync.js:245:13
 TimedPromise@chrome://marionette/content/sync.js:230:10
 interaction.flushEventLoop@chrome://marionette/content/interaction.js:416:10
 webdriverClickElement@chrome://marionette/content/interaction.js:182:31
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+1657040526860	Marionette	INFO	Stopped listening on port 65145
+1657040528360	Marionette	INFO	Stopped listening on port 64597
+1657100585541	geckodriver	INFO	Listening on 127.0.0.1:59403
+1657100586065	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "59404" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/rb/l__d0n_n1t77t6tkdsbrgs4m0000gn/T/rust_mozprofileYVOD9d"
+[GFX1-]: [OPENGL] Failed to init compositor with reason: FEATURE_FAILURE_OPENGL_CREATE_CONTEXT
+1657100593806	Marionette	INFO	Listening on port 59415
+1657100594144	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://pagead2.googlesyndication.com/bg/edue1xTc5YuiZOhJi4VIA_c20CetZt5T9y7Q3cNnrTA.js line 2 > eval line 4929 > eval line 1 > eval line 1 > eval, line 1: Failed to create WebGL context: WebGL creation failed: 
+* tryNativeGL
+* Exhausted GL driver options.
+[GFX1]: [Tiling:Client] Failed to allocate a TextureClient
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+Exiting due to channel error.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+1657100753637	geckodriver	INFO	Listening on 127.0.0.1:60298
+1657100754164	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "60299" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/rb/l__d0n_n1t77t6tkdsbrgs4m0000gn/T/rust_mozprofilePZqz7K"
+[GFX1-]: [OPENGL] Failed to init compositor with reason: FEATURE_FAILURE_OPENGL_CREATE_CONTEXT
+1657100761041	Marionette	INFO	Listening on port 60310
+1657100761229	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://secure-ds.serving-sys.com/resources/PROD/html5/125408/20220705/1076623899/72072021930936358/index.html?v=_2_150_1_0&n=1&sHost=secure-ds.serving-sys.com, line 178: ReferenceError: $ is not defined
+JavaScript warning: https://secure-ds.serving-sys.com/BurstingCachedScripts//Ad_2_221_3_0/ebHtml5Banner.js, line 140: Failed to create WebGL context: WebGL creation failed: 
+* tryNativeGL
+* Exhausted GL driver options.
+JavaScript error: , line 0: AbortError: The fetching process for the media resource was aborted by the user agent at the user's request.
+[Child 29144, MediaDecoderStateMachine #1] WARNING: Decoder=167e9f400 Decode error: NS_ERROR_FAILURE (0x80004005) - mozilla::MediaResult mozilla::AppleATDecoder::GetInputAudioDescription(AudioStreamBasicDescription &, const nsTArray<uint8_t> &): Unable to get format info:1718449215: file /builds/worker/checkouts/gecko/dom/media/MediaDecoderStateMachine.cpp, line 3370
+JavaScript warning: https://pagead2.googlesyndication.com/bg/edue1xTc5YuiZOhJi4VIA_c20CetZt5T9y7Q3cNnrTA.js line 2 > eval line 5019 > eval line 1 > eval line 1 > eval, line 1: Failed to create WebGL context: WebGL creation failed: 
+* tryNativeGL
+* Exhausted GL driver options.
+1657100867205	geckodriver	INFO	Listening on 127.0.0.1:60925
+1657100867738	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "60926" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/rb/l__d0n_n1t77t6tkdsbrgs4m0000gn/T/rust_mozprofilezUKNMS"
+[GFX1-]: [OPENGL] Failed to init compositor with reason: FEATURE_FAILURE_OPENGL_CREATE_CONTEXT
+1657100876811	Marionette	INFO	Listening on port 60937
+1657100876873	Marionette	WARN	TLS certificate errors will be ignored for this session
+1657100877277	geckodriver	INFO	Listening on 127.0.0.1:61080
+1657100877791	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "61081" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/rb/l__d0n_n1t77t6tkdsbrgs4m0000gn/T/rust_mozprofilesEuJYV"
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+[GFX1-]: [OPENGL] Failed to init compositor with reason: FEATURE_FAILURE_OPENGL_CREATE_CONTEXT
+1657100884630	Marionette	INFO	Listening on port 61092
+1657100884727	Marionette	WARN	TLS certificate errors will be ignored for this session
+1657100911900	geckodriver	INFO	Listening on 127.0.0.1:61326
+1657100911933	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "61327" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/rb/l__d0n_n1t77t6tkdsbrgs4m0000gn/T/rust_mozprofileM9A3nU"
+[GFX1-]: [OPENGL] Failed to init compositor with reason: FEATURE_FAILURE_OPENGL_CREATE_CONTEXT
+1657100919217	Marionette	INFO	Listening on port 61332
+1657100919322	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://pagead2.googlesyndication.com/bg/edue1xTc5YuiZOhJi4VIA_c20CetZt5T9y7Q3cNnrTA.js line 2 > eval line 926 > eval line 1 > eval line 1 > eval, line 1: Failed to create WebGL context: WebGL creation failed: 
+* tryNativeGL
+* Exhausted GL driver options.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+console.error: services.settings: 
+  Message: TypeError: NetworkError when attempting to fetch resource.
+  Stack:
+    timedFetch/<@resource://services-common/kinto-http-client.js:549:22
+timedFetch@resource://services-common/kinto-http-client.js:527:20
+request@resource://services-common/kinto-http-client.js:613:41
+execute@resource://services-common/kinto-http-client.js:2400:44
+_fetchChangeset@resource://services-settings/RemoteSettingsClient.jsm:932:22
+_importChanges@resource://services-settings/RemoteSettingsClient.jsm:809:20
+maybeSync@resource://services-settings/RemoteSettingsClient.jsm:527:35
+
+1657101426192	Marionette	INFO	Stopped listening on port 61332
+1657101428237	Marionette	INFO	Stopped listening on port 61092
+1657101430070	Marionette	INFO	Stopped listening on port 60937
+1657101432001	Marionette	INFO	Stopped listening on port 60310
