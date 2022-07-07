@@ -207,7 +207,6 @@ class GuardianCommentsAPI:
             data = NOT_FOUND
         finally:
             return data
-        # :path: / discussion - api / discussion / p / kz8t5?api - key = dotcom - rendering & orderBy = oldest & pageSize = 100 & displayThreaded = true & maxResponses = 3 & page = 1
 
     @staticmethod
     def apiResponseToDictionary(response: object) -> list:
@@ -293,7 +292,11 @@ class efsynScraper:
             return articles_data
 
     @staticmethod
-    def getArticleContent(url: str) -> str:
+    def getArticleContent(url: str) -> object:
+        """
+
+        :type url: object
+        """
         s = requests.Session()
         response = s.get(url)
         soup = BeautifulSoup(response.content, "html.parser")
@@ -311,11 +314,14 @@ class efsynScraper:
 
     @staticmethod
     def getArticleImage(soup: object) -> str:
+        """
+
+        :type soup: object
+        """
         try:
             image = soup.find('figure', attrs={'class': 'article__media'})
             image_url = image.find('img')['src']
             image_url_full = f'{Endpoints.EFSYN_BASE_URL.value}{image_url}'
-            # caption = image.find('figcaption').find('p').text.strip()
             data = image_url_full
 
         except:

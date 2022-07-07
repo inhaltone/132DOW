@@ -6,7 +6,7 @@ naftemporiki = ParserHTML.readRawHTML('../data/raw/naftemporiki/polemos-stin-ouk
 articles = naftemporiki.find_all('div', attrs={'class': 'stream-item'})
 naftemporiki_df = pd.DataFrame()
 path = '../data/raw/naftemporiki/'
-#
+
 for article in articles:
     data = naftemporikiScraper.constructData(article)
     naftemporiki_df = pd.concat([naftemporiki_df, pd.DataFrame([data])], axis=0, ignore_index=True)

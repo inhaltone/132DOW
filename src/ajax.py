@@ -25,7 +25,6 @@ while True:
     except TimeoutException:
         break
     if not ajax:
-        driver.kill()
         break
 
 raw_html = driver.page_source
