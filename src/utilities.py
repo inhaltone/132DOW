@@ -15,14 +15,14 @@ class Utilities:
 
         :type string: str
         """
-        s = string\
-            .replace('"', '')\
-            .replace(',', '')\
-            .replace("'", "")\
-            .replace(".", "")\
-            .replace("’", "")\
-            .replace("/", "")\
-            .replace(":", "")\
+        s = string \
+            .replace('"', '') \
+            .replace(',', '') \
+            .replace("'", "") \
+            .replace(".", "") \
+            .replace("’", "") \
+            .replace("/", "") \
+            .replace(":", "") \
             .replace("&", "")
         return '-'.join(
             re.sub(r"(\s|_|-)+", " ",
@@ -58,10 +58,21 @@ class Utilities:
         :type string: str
         """
         try:
-            match = string.split("/")[3]\
-                .replace("-", " ")\
+            match = string.split("/")[3] \
+                .replace("-", " ") \
                 .upper()
         except:
             match = None
         finally:
             return match
+
+    @staticmethod
+    def removeURL(string: str) -> str:
+        try:
+            clean = re.sub('http://\S+|https://\S+', '', string)
+        except:
+            clean = ''
+        finally:
+            return clean
+
+
