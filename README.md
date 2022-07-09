@@ -1,6 +1,17 @@
-## 132 days of war
-#### Dataset
-**Articles count**: 13463
+# 132 War Days
+### Origin
+| Publisher    | Number of articles | Comments | Lang |
+|:-------------|:-------------------|----------|------|
+| NAFTEMPORIKI | 4628               | `NaN`    | `el` |
+| KATHIMERINI  | 3230               | `NaN`    | `el` |
+| EFSYN        | 2400               | `NaN`    | `el` |
+| THE GUARDIAN | 3205               | 67478    | `en` |
+
+### Number of articles
+The dataset contains **13463** articles.
+### Variables
+There are **19** attributes in each case of the dataset
+## Dataset
 
 | Keys                 | Value                                                                                                                                                                                                |
 |:---------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -24,8 +35,8 @@
 | **Positivity**       | `0.219`                                                                                                                                                                                              |
 | **Negativity**       | `0.089`                                                                                                                                                                                              |
 
-#### Import dataset as dataframe
-````python
+## Import dataset
+```python
 import pandas as pd
 
 war = pd.read_csv('../data/processed/war-ukraine-sentiment-zip.csv',
@@ -33,7 +44,8 @@ war = pd.read_csv('../data/processed/war-ukraine-sentiment-zip.csv',
                                'compresslevel': 1,
                                'mtime': 1},
                   index_col=[0])
-````
+```
+
 ## Run the guardian scraper
 ````shell
 $ cd src
@@ -53,17 +65,28 @@ $ python main.py
 │   ├── nrc
 │   ├── old
 │   ├── processed
-│   ├── raw
-│ 
+│   └── raw
+│
 ├── docs
 │   ├── 
+│   └──
+│   
 ├── notebooks
 │   ├── 
-├── src                   
+│   └──
+│
+├── reports
+│   ├── 
+│   └──
+│   
+├── src
+│   ├── prototypes
+│   │   └── datamodel.py                   
 │   ├── main.py        
 │   ├── utilities.py
-│   └── app.py               
+│   └── app.py 
+│             
 ├── .gitignore
 ├── .env
-└── .README.md
+└── README.md
 ````
