@@ -8,6 +8,17 @@ class Publishers(Enum):
     THE_GUARDIAN = 'THE GUARDIAN'
 
 
+class Lang(Enum):
+    ENGLISH = 'en'
+    GREEK = 'el'
+
+
+class Sentiments(Enum):
+    NEGATIVE = 'negative'
+    POSITIVE = 'positive'
+    NEUTRAL = 'neutral'
+
+
 class DataModel(Enum):
     ARTICLE_PUBLISHER = 'Publisher'
     ARTICLE_TAG = 'Tag'
