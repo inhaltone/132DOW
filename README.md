@@ -44,3 +44,26 @@ $ source /venv/bin/activate
 ````shell
 $ python main.py
 ````
+## Project structure
+````
+├── data
+│   ├── final 
+│   ├── images
+│   ├── intermediate
+│   ├── nrc
+│   ├── old
+│   ├── processed
+│   ├── raw
+│ 
+├── docs
+│   ├── 
+├── notebooks
+│   ├── 
+├── src                   
+│   ├── main.py        
+│   ├── utilities.py
+│   └── app.py               
+├── .gitignore
+├── .env
+└── .README.md
+````
