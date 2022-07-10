@@ -1,4 +1,6 @@
 # 132 War Days Dataset
+> This repository is the result of an academic research in Data Science field during a postgraduate course at the UOA University of Athens
+
 This dataset created by scraping from various journal web domains based on Europe.  
 ### Origin
 | Publisher    | Number of articles | Comments | Lang |
