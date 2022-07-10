@@ -49,17 +49,35 @@ war = pd.read_csv('../data/processed/war-ukraine-sentiment-zip.csv',
                   index_col=[0])
 ```
 ## Plots
-Scatter plot describes linear relations between negativity and positivity variables
-
 ![This is an image](reports/26-linear-relations.png)
+_Scatter plot describes linear relations between negativity and positivity variables_
 
-Sentiments distribution along Publishers
-
+![This is an image](reports/1-Scatter-plot-words.png)
+![This is an image](reports/2-Scatter-plot-date-range.png)
+![This is an image](reports/3-Jointplot-linear-regression.png)
 ![This is an image](reports/4-1-dist-sentiment-publisher.png)
-
+![This is an image](reports/4-2-dist-sentiment-sentiment.png)
+![This is an image](reports/5-relplot-efsyn.png)
+![This is an image](reports/6-relplot-guardian.png)
+![This is an image](reports/7-relplot-kathimerini.png)
+![This is an image](reports/8-naftemporiki.png)
+![This is an image](reports/9-catplot-facetgrid-sentiments.png)
+![This is an image](reports/10-bar-publisher.png)
+![This is an image](reports/11-bar-sentiment.png)
+![This is an image](reports/12-bar-publisher-words.png)
+![This is an image](reports/13-displot-sentiments.png)
+![This is an image](reports/14-displot-publisher.png)
+![This is an image](reports/15-dist-bar-publisher.png)
 ![This is an image](reports/16-dist-bar-sentiments.png)
-
 ![This is an image](reports/17-dist-reverse.png)
+![This is an image](reports/18-nlp-en.png)
+![This is an image](reports/19-nlp-gr.png)
+![This is an image](reports/20-nlp.png)
+![This is an image](reports/25-heatmap-correlations.png)
+![This is an image](reports/26-linear-relations.png)
+![This is an image](reports/21-scatter-text.png)
+
+
 
 
 ## Project structure
