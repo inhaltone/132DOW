@@ -1,4 +1,5 @@
 .env
 .DS_Store
 .idea/
+/src/geckodriver.log
 /src/__pycache__/

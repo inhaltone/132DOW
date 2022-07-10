@@ -1,8 +1,8 @@
 from typing import Union, Any
 from bs4 import BeautifulSoup
-from endpoints import Endpoints
+from prototypes.endpoints import Endpoints
 from datetime import datetime
-from utilities import Utilities
+from helpers.utilities import Utilities
 import requests
 import re
 

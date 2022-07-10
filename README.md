@@ -1,4 +1,5 @@
-# 132 War Days
+# 132 War Days Dataset
+This dataset created by scraping from various journal web domains based on Europe.  
 ### Origin
 | Publisher    | Number of articles | Comments | Lang |
 |:-------------|:-------------------|----------|------|
@@ -45,21 +46,14 @@ war = pd.read_csv('../data/processed/war-ukraine-sentiment-zip.csv',
                                'mtime': 1},
                   index_col=[0])
 ```
-
-## Run the guardian scraper
-````shell
-$ cd src
-````
-````shell
-$ source /venv/bin/activate
-````
-````shell
-$ python main.py
-````
+## Plots
+Scatter plot describes linear relations between negativity and positivity variables
+![This is an image](reports/26-linear-relations.png)
 ## Project structure
 ````
 ├── data
-│   ├── final 
+│   └── final 
+│       └── 132-war-days-zip.csv
 │   ├── images
 │   ├── intermediate
 │   ├── nrc
@@ -68,25 +62,60 @@ $ python main.py
 │   └── raw
 │
 ├── docs
-│   ├── 
-│   └──
+│   ├── src 
+│   └── index.html
 │   
 ├── notebooks
-│   ├── 
-│   └──
+│   ├── dataAnalysisVisualization.ipynb
+│   ├── dataImportTransform.ipynb
+│   ├── dataMerge.ipynb
+│   ├── dataOptCleaning.ipynb
+│   ├── dataTesting.ipynb
+│   ├── guardianComments.ipynb
+│   └── sentimentAnalysis.ipynb
 │
 ├── reports
-│   ├── 
-│   └──
+│   └── ***.png
 │   
 ├── src
+│   ├── helpers
+│   │   └── utilities.py
+│   │ 
+│   ├── plots
+│   │   └── cloud.py
+│   │  
 │   ├── prototypes
-│   │   └── datamodel.py                   
-│   ├── main.py        
-│   ├── utilities.py
+│   │   ├── browser.py 
+│   │   ├── datamodel.py 
+│   │   ├── endpoints.py 
+│   │   └── twitterapi.py
+│   │ 
+│   ├── scrapers
+│   │   ├── comments.py 
+│   │   ├── efsyn.py 
+│   │   ├── guardian.py 
+│   │   ├── guardian-old.py 
+│   │   ├── images.py 
+│   │   ├── kathimerini.py 
+│   │   ├── naftemporiki.py 
+│   │   ├── scrapeajax.py 
+│   │   ├── scrapescroll.py 
+│   │   └── tweets.py
+│   │                    
 │   └── app.py 
 │             
 ├── .gitignore
 ├── .env
 └── README.md
+````
+
+## Run the guardian scraper
+````shell
+$ cd src/scrapers
+````
+````shell
+$ source /venv/bin/activate
+````
+````shell
+$ python guardian.py
 ````
