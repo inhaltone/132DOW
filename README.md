@@ -48,7 +48,18 @@ war = pd.read_csv('../data/processed/war-ukraine-sentiment-zip.csv',
 ```
 ## Plots
 Scatter plot describes linear relations between negativity and positivity variables
+
 ![This is an image](reports/26-linear-relations.png)
+
+Sentiments distribution along Publishers
+
+![This is an image](reports/4-1-dist-sentiment-publisher.png)
+
+![This is an image](reports/16-dist-bar-sentiments.png)
+
+![This is an image](reports/17-dist-reverse.png)
+
+
 ## Project structure
 ````
 ├── data
