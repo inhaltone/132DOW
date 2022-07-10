@@ -16,33 +16,34 @@ The dataset contains **13463** articles.
 There are **19** attributes in each case of the dataset
 ## Dataset
 
-| Keys                 | Value                                                                                                                                                                                                |
-|:---------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Publisher**        | `THE GUARDIAN` `KATHIMERINI` `EFSYN` `NAFTEMPORIKI`                                                                                                                                                  |
-| **Date Formatted**   | `2022-02-23`                                                                                                                                                                                         |
-| **Lang**             | `en/el`                                                                                                                                                                                              |
-| **Heading**          | `Russia-Ukraine war: what we...`                                                                                                                                                                     |
-| **Tag**              | `WORLD` `POLITICS` `BOOKS` `...`                                                                                                                                                                     |
-| **Text**             | `Not long ago, Brexit Britain was the bad boy of Europe. Then it was Poland’s turn, its rightwing leadership likewise excoriated for defying the Brussels establishment. Now, after the invasion...` |
-| **Comments exist**   | `True` `False`                                                                                                                                                                                       |
-| **Comments count**   | `7064`                                                                                                                                                                                               |
-| **Comments api key** | `/p/kz3fp`                                                                                                                                                                                           |
-| **Article url**      | `https://www.theguardian.com/politics/live/2022/feb/23/uk-politics...`                                                                                                                               |
-| **Chars**            | `18673`                                                                                                                                                                                              |
-| **Words**            | `3017`                                                                                                                                                                                               |
-| **Year**             | `2022`                                                                                                                                                                                               |
-| **Month**            | `2`                                                                                                                                                                                                  |
-| **Day**              | `23`                                                                                                                                                                                                 |
-| **Lemma**            | `long ago brexit britain bad boy europe poland turn rightwing leadership likewise excoriate defy brussels establishment invasion...`                                                                 |
-| **Sentiments**       | `negative` `neutral` `positive`                                                                                                                                                                      |
-| **Positivity**       | `0.219`                                                                                                                                                                                              |
-| **Negativity**       | `0.089`                                                                                                                                                                                              |
+| Keys                 | Value                                                                                                                                                                                                | Dtype            |
+|:---------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------|
+| **Publisher**        | `THE GUARDIAN` `KATHIMERINI` `EFSYN` `NAFTEMPORIKI`                                                                                                                                                  | _category_       |
+| **Date Formatted**   | `2022-02-23`                                                                                                                                                                                         | _datetime64[ns]_ |
+| **Lang**             | `en/el`                                                                                                                                                                                              | _category_       |
+| **Heading**          | `Russia-Ukraine war: what we...`                                                                                                                                                                     | _string_         |
+| **Tag**              | `WORLD` `POLITICS` `BOOKS` `...`                                                                                                                                                                     | _category_       |
+| **Text**             | `Not long ago, Brexit Britain was the bad boy of Europe. Then it was Poland’s turn, its rightwing leadership likewise excoriated for defying the Brussels establishment. Now, after the invasion...` | _string_         |
+| **Comments exist**   | `True` `False`                                                                                                                                                                                       | _bool_           |
+| **Comments count**   | `7064`                                                                                                                                                                                               | _int32_          |
+| **Comments api key** | `/p/kz3fp`                                                                                                                                                                                           | _string_         |
+| **Article url**      | `https://www.theguardian.com/politics/live/2022/feb/23/uk-politics...`                                                                                                                               | _string_         |
+| **Chars**            | `18673`                                                                                                                                                                                              | _int64_          |
+| **Words**            | `3017`                                                                                                                                                                                               | _int64_          |
+| **Year**             | `2022`                                                                                                                                                                                               | _int16_          |
+| **Month**            | `2`                                                                                                                                                                                                  | _int8_           |
+| **Day**              | `23`                                                                                                                                                                                                 | _int8_           |
+| **Lemma**            | `long ago brexit britain bad boy europe poland turn rightwing leadership likewise excoriate defy brussels establishment invasion...`                                                                 | _string_         |
+| **Lemma_unique**     | `437`                                                                                                                                                                                                | _int64_          |
+| **Sentiments**       | `negative` `neutral` `positive`                                                                                                                                                                      | _category_       |
+| **Positivity**       | `0.219`                                                                                                                                                                                              | _int64_          |
+| **Negativity**       | `0.089`                                                                                                                                                                                              | _int64_          |
 
 ## Import dataset
 ```python
 import pandas as pd
 
-war = pd.read_csv('../data/processed/war-ukraine-sentiment-zip.csv',
+war = pd.read_csv('../data/processed/132-war-days.csv',
                   compression={'method': 'gzip',
                                'compresslevel': 1,
                                'mtime': 1},
@@ -52,9 +53,6 @@ war = pd.read_csv('../data/processed/war-ukraine-sentiment-zip.csv',
 ![This is an image](reports/26-linear-relations.png)
 _Scatter plot describes linear relations between negativity and positivity variables_
 
-![This is an image](reports/1-Scatter-plot-words.png)
-![This is an image](reports/2-Scatter-plot-date-range.png)
-![This is an image](reports/3-Jointplot-linear-regression.png)
 ![This is an image](reports/4-1-dist-sentiment-publisher.png)
 ![This is an image](reports/4-2-dist-sentiment-sentiment.png)
 ![This is an image](reports/5-relplot-efsyn.png)
@@ -64,18 +62,12 @@ _Scatter plot describes linear relations between negativity and positivity varia
 ![This is an image](reports/9-catplot-facetgrid-sentiments.png)
 ![This is an image](reports/10-bar-publisher.png)
 ![This is an image](reports/11-bar-sentiment.png)
-![This is an image](reports/12-bar-publisher-words.png)
-![This is an image](reports/13-displot-sentiments.png)
-![This is an image](reports/14-displot-publisher.png)
 ![This is an image](reports/15-dist-bar-publisher.png)
 ![This is an image](reports/16-dist-bar-sentiments.png)
 ![This is an image](reports/17-dist-reverse.png)
 ![This is an image](reports/18-nlp-en.png)
-![This is an image](reports/19-nlp-gr.png)
 ![This is an image](reports/20-nlp.png)
 ![This is an image](reports/25-heatmap-correlations.png)
-![This is an image](reports/26-linear-relations.png)
-![This is an image](reports/21-scatter-text.png)
 
 
 
