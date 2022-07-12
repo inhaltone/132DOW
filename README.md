@@ -49,29 +49,6 @@ war = pd.read_csv('../data/processed/132-war-days.csv',
                                'mtime': 1},
                   index_col=[0])
 ```
-## Plots
-![This is an image](reports/26-linear-relations.png)
-_Scatter plot describes linear relations between negativity and positivity variables_
-
-![This is an image](reports/4-1-dist-sentiment-publisher.png)
-![This is an image](reports/4-2-dist-sentiment-sentiment.png)
-![This is an image](reports/5-relplot-efsyn.png)
-![This is an image](reports/6-relplot-guardian.png)
-![This is an image](reports/7-relplot-kathimerini.png)
-![This is an image](reports/8-naftemporiki.png)
-![This is an image](reports/9-catplot-facetgrid-sentiments.png)
-![This is an image](reports/10-bar-publisher.png)
-![This is an image](reports/11-bar-sentiment.png)
-![This is an image](reports/15-dist-bar-publisher.png)
-![This is an image](reports/16-dist-bar-sentiments.png)
-![This is an image](reports/17-dist-reverse.png)
-![This is an image](reports/18-nlp-en.png)
-![This is an image](reports/20-nlp.png)
-![This is an image](reports/25-heatmap-correlations.png)
-
-
-
-
 ## Project structure
 ````
 ├── data
@@ -94,6 +71,7 @@ _Scatter plot describes linear relations between negativity and positivity varia
 │   ├── dataMerge.ipynb
 │   ├── dataOptCleaning.ipynb
 │   ├── dataTesting.ipynb
+│   ├── dataTweets.ipynb
 │   ├── guardianComments.ipynb
 │   └── sentimentAnalysis.ipynb
 │
@@ -142,3 +120,25 @@ $ source /venv/bin/activate
 ````shell
 $ python guardian.py
 ````
+## Plots
+![This is an image](reports/26-linear-relations.png)
+_Scatter plot describes linear relations between negativity and positivity variables_
+
+![This is an image](reports/4-1-dist-sentiment-publisher.png)
+![This is an image](reports/4-2-dist-sentiment-sentiment.png)
+![This is an image](reports/5-relplot-efsyn.png)
+![This is an image](reports/6-relplot-guardian.png)
+![This is an image](reports/7-relplot-kathimerini.png)
+![This is an image](reports/8-naftemporiki.png)
+![This is an image](reports/9-catplot-facetgrid-sentiments.png)
+![This is an image](reports/10-bar-publisher.png)
+![This is an image](reports/11-bar-sentiment.png)
+![This is an image](reports/15-dist-bar-publisher.png)
+![This is an image](reports/16-dist-bar-sentiments.png)
+![This is an image](reports/17-dist-reverse.png)
+![This is an image](reports/18-nlp-en.png)
+![This is an image](reports/20-nlp.png)
+![This is an image](reports/25-heatmap-correlations.png)
+
+
+
