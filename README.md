@@ -11,7 +11,9 @@ This dataset created by scraping from various journal web domains based on Europ
 | THE GUARDIAN | 3205               | 67478    | `en` |
 
 ### Number of articles
-The dataset contains **13463** articles and also in chunk fragments contains **73944** Tweets and **67478** comments from The Guardian with relation to articles on primary dataset
+The dataset contains **13463** articles
+
+Also there are chunk fragments that contain **73944** Tweets in total and **67478** comments from The Guardian with relation to articles on primary dataset
 ### Variables
 There are **19** attributes in each case of the dataset
 ## Dataset
