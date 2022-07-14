@@ -1,6 +1,7 @@
 import re
 import string
 
+
 class Utilities:
 
     @staticmethod
@@ -74,16 +75,16 @@ class Utilities:
             clean = ''
         finally:
             return clean
-        
+
     @staticmethod
     def removePunctuation(text: str) -> str:
         """
 
         :type text: str
         """
-        text = re.sub(r'[' + string.punctuation + '’—”' + ']', "", text.lower())
+        text = re.sub(r'[' + string.punctuation + '’—”' + ']', ' ', text.lower())
         return re.sub(r'\W', ' ', text)
-    
+
     @staticmethod
     def removeAccents(text: str) -> str:
         """
@@ -101,5 +102,40 @@ class Utilities:
                 .replace("ή", "η")
                 .replace("ού", "ου")
                 )
+
+    @staticmethod
+    def removeHashtag(text: str) -> str:
+        return re.sub("#\S+", "", text)
+
+    @staticmethod
+    def removeMention(text: str) -> str:
+        return re.sub("@\S+", "", text)
+
+    @staticmethod
+    def removeLineBreaks(text: str) -> str:
+        return re.sub("\n+", "", text)
+
+    @staticmethod
+    def removeRT(string: str) -> str:
+        try:
+            clean = re.sub('RT', '', string)
+        except:
+            clean = ''
+        finally:
+            return clean
+
+    @staticmethod
+    def removeUnicode(text: str) -> str:
+        """
+
+        :type text: str
+        """
+        return (text
+                .replace("amp", "")
+                )
+
+    @staticmethod
+    def trimWhiteSpaces(text: str) -> str:
+        return " ".join(text.split())
 
 
